@@ -1,0 +1,20 @@
+document.write('<p class="header"/>');
+document.write('<p class="nav"/>');
+document.write('<p class="section"/>');
+document.write('<p class="footer"/>');
+let n = prompt('Як Вас звати?');
+document.write('<p>' + n + '</p>');
+let p = prompt('Ваше прізвище?');
+document.write('<p>' + p + '</p>');
+let year = prompt('Скільки Вам років?');
+document.write('<p>' + year + '</p>' );
+var numb = prompt('Введіть число');
+var num1 = parseFloat(numb);
+var numb2 = prompt('Введіть число');
+var num2 = parseFloat(numb2);
+var numb3 = prompt('Введіть число');
+var num3 = parseFloat(numb3);
+var rez = num1 + num2 + num3;
+var rez2 = rez / 3;
+document.write(rez2);
+
