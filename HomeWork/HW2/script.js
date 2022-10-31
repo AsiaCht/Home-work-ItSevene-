@@ -56,8 +56,8 @@ for(let i = 0; i < 10; ++i){
 const styles =['Джаз', 'Блюз'];
 styles.push('Рок-н-рол');
 console.log(styles);
-const midlArray = Math.floor(style.length / 2);
-style.splice(midlArray, 1, " Класика");
+const midlArray = Math.floor(styles.length / 2);
+styles.splice(midlArray, 1, " Класика");
 console.log(styles);
 styles.shift();
 console.log(styles);
