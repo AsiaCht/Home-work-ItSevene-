@@ -1,6 +1,6 @@
 let a = 8;
 let b = 9; 
-let rezult = (a+b>4) ? 'Мало' : 'Много';
+let rezult = (a+b<4) ? 'Мало' : 'Много';
 console.log(rezult);
 
 login = 'Violet';
@@ -56,7 +56,8 @@ for(let i = 0; i < 10; ++i){
 const styles =['Джаз', 'Блюз'];
 styles.push('Рок-н-рол');
 console.log(styles);
-styles.splice(2,0,'Класика');
+const midlArray = Math.floor(style.length / 2);
+style.splice(midlArray, 1, " Класика");
 console.log(styles);
 styles.shift();
 console.log(styles);
