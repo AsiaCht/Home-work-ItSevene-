@@ -7,14 +7,16 @@ const doc = {
     heads : {
       head :'brains',
       nose : 'snot',
-      ears : 'sound'},
+      ears : 'sound'
+    },
     bodies : {
       heart :'motor',
-      stomach : 'fuel'},
+      stomach :'fuel'
+    },
     data : {
-        years: 'many',
-        months: 'twelve'
-      }
+      years: 'many',
+      months: 'twelve'
+    }
   },
    funcs: function (elem){
     for(let i in doc){
@@ -23,5 +25,5 @@ const doc = {
     }
   }
 }
-
+doc.funcs(doc.data)
 
