@@ -1,0 +1,108 @@
+/* задача квадрат */
+.home{
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+}
+/* задача телефон */
+pre {
+  background: silver;
+}.green {
+  color: green;
+}
+.btn{
+  width: 100px;
+  height:25px;
+  font-size: 15px;
+  font-weight: 600;
+  color:blue ;
+}
+.inp{
+  margin-right:10px;
+  height:25px;
+  color: rgb(13, 13, 54);
+  font-weight: 100;
+}
+.inp::placeholder {
+  font-weight: 300;
+  font-size: 50%;
+  opacity: .5;
+  color: grey;
+}
+.inp2{
+  font-size: 15px;
+  color:red;
+}
+/* задача слайдер */
+
+/* .container{
+  width: 600px;
+  text-align: center;
+  margin: 50px 50px;
+}
+img{
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.slider-line{
+  display: flex;
+  overflow: hidden;
+  transition: 2s;
+} */
+#slider{
+  width: 600px;
+  margin:0 auto;
+}
+#slider img{
+  width: 600px;
+  height: 600px;
+  display: none;
+  object-fit: cover;
+}
+#slider img:first-child{
+  display: block;
+}
+  /* секундомір */
+#container{
+  width: 320px;
+  height: 200px;
+  margin: 20px auto;
+  background-color: black;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.stopwatch{
+  width: 86%;
+  height: 60%;
+  background-color: rgb(2, 68, 2);
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.time {
+  margin: auto;
+}
+.hour, .min, .sec, .dot{
+  font-size: 43px;
+  font-weight: 600;
+  font-style: normal;
+}
+.buttons{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+#start, #stop, #reset{
+  color: whitesmoke;
+  background-color: black;
+  border: none;
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.mil{
+  display: none;
+}
