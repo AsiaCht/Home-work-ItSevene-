@@ -11,10 +11,11 @@ const Value = () => {
 }
 
 let hr = min = sec = mil = '0'+ 0,
-startTimer;
+startTimer,
+fInterval = false;
 const start = () =>{
   stopwatch.style.backgroundColor = 'green'
-   const startTimer = () => {
+   startTimer = setInterval(() => {
     mil++
     mil = mil < 10 ? '0' + mil:mil;
     if(mil == 100){
@@ -34,23 +35,26 @@ const start = () =>{
     }
 
     Value()
-   }
-   setInterval(startTimer, 10);
+   },10)
+   
 }
 
 const stop = () =>{
   stopwatch.style.backgroundColor = 'red';
-  clearInterval(startTimer);
+  clearStop()
 }
 
 const reset = () =>{
   stopwatch.style.backgroundColor = 'grey';
-  clearInterval(startTimer);
   hr = min = sec = mil = '0'+ 0;
-  Value()
+  Value();
+  clearStop();
 }
 startBtn.addEventListener('click', start);
 stopBtn.addEventListener('click', stop);
 resetBtn.addEventListener('click', reset);
 
+const clearStop = () =>{
+  clearInterval(startTimer);
+}
 
