@@ -33,23 +33,20 @@ const start = () =>{
       hr = min < 10 ? '0'+ hr:hr;
       min = '0' + 0;
     }
-
+    fInterval = true;
     Value()
    },10)
-   
 }
-
 const stop = () =>{
   stopwatch.style.backgroundColor = 'red';
   clearStop()
 }
-
 const reset = () =>{
   stopwatch.style.backgroundColor = 'grey';
   hr = min = sec = mil = '0'+ 0;
   Value();
   clearStop();
-}
+}  
 startBtn.addEventListener('click', start);
 stopBtn.addEventListener('click', stop);
 resetBtn.addEventListener('click', reset);
